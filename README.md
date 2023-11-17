@@ -15,7 +15,7 @@ Security Measures: Implements encryption and access controls for user data priva
 ## Contribute:
 
 We welcome contributions! Feel free to open issues, suggest improvements, or submit pull requests.
-##Documentation:
+## Documentation:
 
 Detailed documentation is available to guide users on using the web application and understanding the model.
 Explore the potential of predicting life expectancy and join us on this journey of data-driven insights and informed decision-making!
