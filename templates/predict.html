@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> predict </title>
+    <link rel="stylesheet" href="../static/css/predict.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Predict Your Life !</div>
+    <div class="content">
+      <form action="{{ url_for('predict')}}"method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Year</span>
+            <input type="text" placeholder="Year" name="Year" id="Year" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Adult Mortality</span>
+            <input type="text" placeholder="AdultMortality" name="AdultMortality" id="AdultMortality" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Infant Deaths</span>
+            <input type="text" placeholder="InfantDeaths" name="InfantDeaths" id="InfantDeaths" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Alcohol</span>
+            <input type="text" placeholder="Alcohol" name="Alcohol" id="Alcohol" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Percentage Expenditure</span>
+            <input type="text" placeholder="Percentage Expenditure" name="PercentageExpenditure" id="PercentageExpenditure" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Hepatitis B</span>
+            <input type="text" placeholder="Hepatitis B" name="HepatitisB" id="HepatitisB" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Measles</span>
+            <input type="text" placeholder="Measles" name="Measles" id="Measles" required>
+          </div>
+          <div class="input-box">
+            <span class="details">BMI</span>
+            <input type="text" placeholder="BMI" name="BMI" id="BMI" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Under-Five Deaths</span>
+            <input type="text" placeholder="Under-Five Deaths"  name="UnderFiveDeaths" id="UnderFiveDeaths" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Polio</span>
+            <input type="text" placeholder="Polio"  name="Polio" id="Polio" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Total Expenditure</span>
+            <input type="text" placeholder="Total Expenditure" name="TotalExpenditure" id="TotalExpenditure"required>
+          </div>
+          <div class="input-box">
+            <span class="details">Diphtheria</span>
+            <input type="text" placeholder="Diphtheria" name="Diphtheria" id="Diphtheria" required>
+          </div>
+          <div class="input-box">
+            <span class="details">HIV/AIDS</span>
+            <input type="text" placeholder="HIV/AIDS" name="HIVAIDS" id="HIVAIDS" required>
+          </div>
+          <div class="input-box">
+            <span class="details">GDP</span>
+            <input type="text" placeholder="GDP" name="GDP" id="GDP" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Population</span>
+            <input type="text" placeholder="Population" name="Population" id="Population" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Thinness</span>
+            <input type="text" placeholder="5-19 years" name="Thinness1-19years" id="Thinness1-19years" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Thinness 5-9years</span>
+            <input type="text" placeholder="Thinness 5-9years" name="Thinness5-9years" id="Thinness5-9years" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Income Composition</span>
+            <input type="text" placeholder="Income composition" name="IncomeComposition" id="IncomeComposition" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Schooling</span>
+            <input type="text" placeholder="schooling" name="Schooling" id="Schooling" required>
+          </div>
+        </div>
+        
+        
+        <!-- <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div> -->
+        <div class="button">
+          <input type="submit" value="Predict">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- <!DOCTYPE html>
+<html >
+From https://codepen.io/frytyler/pen/EGdtg
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Life Expectancy Prediction</h1>
+
+      Main Input For Receiving Query to our ML 
+    <form action="{{ url_for('predict')}}"method="post">
+    	<label for="Year">Year:</label>
+        <input type="text" name="Year" id="Year"><br>
+
+        <label for="AdultMortality">Adult Mortality:</label>
+        <input type="text" name="AdultMortality" id="AdultMortality"><br>
+
+        <label for="InfantDeaths">Infant Deaths:</label>
+        <input type="text" name="InfantDeaths" id="InfantDeaths"><br>
+
+        <label for="Alcohol">Alcohol:</label>
+        <input type="text" name="Alcohol" id="Alcohol"><br>
+
+        <label for="PercentageExpenditure">Percentage Expenditure:</label>
+        <input type="text" name="PercentageExpenditure" id="PercentageExpenditure"><br>
+
+        <label for="HepatitisB">Hepatitis B:</label>
+        <input type="text" name="HepatitisB" id="HepatitisB"><br>
+
+        <label for="Measles">Measles:</label>
+        <input type="text" name="Measles" id="Measles"><br>
+
+        <label for="BMI">BMI:</label>
+        <input type="text" name="BMI" id="BMI"><br>
+
+        <label for="UnderFiveDeaths">Under-Five Deaths:</label>
+        <input type="text" name="UnderFiveDeaths" id="UnderFiveDeaths"><br>
+
+        <label for="Polio">Polio:</label>
+        <input type="text" name="Polio" id="Polio"><br>
+
+        <label for="TotalExpenditure">Total Expenditure:</label>
+        <input type="text" name="TotalExpenditure" id="TotalExpenditure"><br>
+
+        <label for="Diphtheria">Diphtheria:</label>
+        <input type="text" name="Diphtheria" id="Diphtheria"><br>
+
+        <label for="HIVAIDS">HIV/AIDS:</label>
+        <input type="text" name="HIVAIDS" id="HIVAIDS"><br>
+
+        <label for="GDP">GDP:</label>
+        <input type="text" name="GDP" id="GDP"><br>
+
+        <label for="Population">Population:</label>
+        <input type="text" name="Population" id="Population"><br>
+
+        <label for="Thinness1-19years">Thinness 1-19 years:</label>
+        <input type="text" name="Thinness1-19years" id="Thinness1-19years"><br>
+
+        <label for="Thinness5-9years">Thinness 5-9 years:</label>
+        <input type="text" name="Thinness5-9years" id="Thinness5-9years"><br>
+
+        <label for="IncomeComposition">Income Composition of Resources:</label>
+        <input type="text" name="IncomeComposition" id="IncomeComposition"><br>
+
+        <label for="Schooling">Schooling:</label>
+        <input type="text" name="Schooling" id="Schooling"><br>
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>    -->

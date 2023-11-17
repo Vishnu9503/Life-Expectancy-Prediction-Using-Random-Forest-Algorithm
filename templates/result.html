@@ -1,0 +1,126 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+    <style>
+        /* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply a background color and font styling */
+body {
+  background-color: #62d2a2;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the main content on the page */
+h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Style the prediction text */
+h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Style the table containing the form data */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style table headers */
+th {
+  background-color: #1fab89;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+  font-weight: bold;
+}
+
+/* Style table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style table cells */
+td {
+  padding: 8px;
+}
+
+/* Add a hover effect on table rows */
+tr:hover {
+  background-color: #ddd;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <h3>{{ prediction_text }}</h3>
+
+    <h2>Form Data from Database</h2>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Year</th>
+            <th>Adult Mortality</th>
+            <th>Infant Deaths</th>
+            <th>Alcohol</th>
+            <th>Percentage Expenditure</th>
+            <th>Hepatitis B</th>
+            <th>Measles</th>
+            <th>BMI</th>
+            <th>Under-Five Deaths</th>
+            <th>Polio</th>
+            <th>Total Expenditure</th>
+            <th>Diphtheria</th>
+            <th>HIV/AIDS</th>
+            <th>GDP</th>
+            <th>Population</th>
+            <th>Thinness 1-19 years</th>
+            <th>Thinness 5-9 years</th>
+            <th>Income Composition</th>
+            <th>Schooling</th>
+            <th>Prediction</th>
+            <!-- Add more table headers for other fields -->
+        </tr>
+        {% for data in data_from_db %}
+        <tr>
+            <td>{{ data.Username }}</td>
+            <td>{{ data.Year }}</td>
+            <td>{{ data.AdultMortality }}</td>
+            <td>{{ data.InfantDeaths }}</td>
+            <td>{{ data.Alcohol }}</td>
+            <td>{{ data.PercentageExpenditure }}</td>
+            <td>{{ data.HepatitisB }}</td>
+            <td>{{ data.Measles }}</td>
+            <td>{{ data.BMI }}</td>
+            <td>{{ data.UnderFiveDeaths }}</td>
+            <td>{{ data.Polio }}</td>
+            <td>{{ data.TotalExpenditure }}</td>
+            <td>{{ data.Diphtheria }}</td>
+            <td>{{ data.HIVAIDS }}</td>
+            <td>{{ data.GDP }}</td>
+            <td>{{ data.Population }}</td>
+            <td>{{ data.Thinness1_19years }}</td>
+            <td>{{ data.Thinness5_9years }}</td>
+            <td>{{ data.IncomeComposition }}</td>
+            <td>{{ data.Schooling }}</td>
+            <td>{{ data.Prediction }}</td>
+          </tr>
+          
+        {% endfor %}
+    </table>
+</body>
+</html>
